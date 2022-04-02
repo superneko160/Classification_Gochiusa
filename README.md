@@ -1,5 +1,5 @@
 # Classification_Gochiusa
-"Is your order a rabbit?" Classification of characters in.  
+"Is the Order a Rabbit?" Classification of characters in.  
 
 ## Classes(Character)  
  - Chino  
@@ -15,26 +15,26 @@
  - h5py 2.10.0  
 
 ### Note
-    Note that the library version is out of date and an error will occur.
+  Note that the library version is out of date and an error will occur.
 
 ## Run
 
 ### Docker
- - `docker compose up -d --build`
- - `docker compose exec app bash`  
+    docker compose up -d --build
+    docker compose exec app bash  
 
  ### Crawling image
- - `python opt/craw_image.py`  
+    python opt/craw_image.py  
  In some cases, images cannot be collected successfully. In that case, collect images manually.  
 
  ### Preprocessing
- - `python opt/preprocessing.py`  
+    python opt/preprocessing.py  
 
  ### Learning
- - `python opt/train.py`  
+    python opt/train.py  
 
  ### Classification
-Set the path to the image in the codeinfo file.  
+Set the path to the image in the codeinfo.py.  
 `QUESTION_PIC = "opt/foo/bar.jpg"`  
 
- - `python opt/main.py`  
+    python opt/main.py  
